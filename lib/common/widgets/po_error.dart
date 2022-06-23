@@ -1,0 +1,18 @@
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class PoError extends StatelessWidget {
+  const PoError({Key? key, required this.error}) : super(key: key);
+
+  final String error;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: error != null ? Text(error) : Text("nao foi possivel"),
+      ),
+    );
+  }
+}
